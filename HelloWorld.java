@@ -1,1 +1,1 @@
-public class HelloWorld { public static void main(String[] args) { System.out.println("Hello from Jenkins pipeline!"); } }
+public class HelloWorld { public static void main(String[] args) { System.out.println("Hello from Jenkins pipeline! GUYS I m RAMISHA"); } }
