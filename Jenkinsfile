@@ -6,16 +6,14 @@ pipeline {
                 echo 'Code checked out successfully'
             }
         }
-        stage('Build') {
+        stage('Compile Java') {
             steps {
-                echo 'Running build steps...'
-                sh 'echo Build step executed'
+                sh 'javac HelloWorld.java'
             }
         }
-        stage('Test') {
+        stage('Run Java') {
             steps {
-                echo 'Running tests...'
-                sh 'echo Tests passed'
+                sh 'java HelloWorld'
             }
         }
     }
